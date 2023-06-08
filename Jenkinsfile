@@ -10,7 +10,7 @@ pipeline {
         checkout([
           $class: 'GitSCM', 
           branches: [[name: 'main']],
-          userRemoteConfigs: [[url: '']]
+          userRemoteConfigs: [[url: 'git@github.com:ISeco/project-JUnit.git']]
         ])
       }
     }
